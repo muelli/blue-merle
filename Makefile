@@ -26,7 +26,7 @@ endef
 define Build/Compile
 endef
 
-define Package/blue-merle/download
+define package/blue-merle/download
 endef
 
 define Package/blue-merle/install

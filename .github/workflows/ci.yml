@@ -37,6 +37,9 @@ jobs:
           NO_REFRESH_CHECK: 1
           V: sc
 
+      - name: config
+        run: cat .config
+
       - name: Store packages
         uses: actions/upload-artifact@v2
         with:
@@ -49,5 +52,3 @@ jobs:
       - name: Verify logs saved
         run: find artifacts/logs/package/feeds/packages/ -mindepth 2 -maxdepth 2 -name compile.txt -type f | grep .
 
-      - name: config
-        run: cat .config

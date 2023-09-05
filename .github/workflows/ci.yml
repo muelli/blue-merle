@@ -20,9 +20,13 @@ jobs:
           - mips_24kc
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          persist-credentials: false
+          fetch-depth: 2
+          path: blue-merle
+
 
       - name: Build
         uses: openwrt/gh-action-sdk@main

@@ -29,8 +29,7 @@ jobs:
         env:
           ARCH: ${{ matrix.arch }}
           PACKAGES: blue-merle
-          EXTRA_FEEDS: >-
-            src-git|blue-merle|https://github.com/srlabs/blue-merle
+          FEED_DIR: ${{ github.workspace }}
 
       - name: Store packages
         uses: actions/upload-artifact@v2

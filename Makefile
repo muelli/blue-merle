@@ -7,6 +7,8 @@ PKG_RELEASE:=$(AUTORELEASE)
 PKG_MAINTAINER:=Matthias <matthias@srlabs.de>
 PKG_LICENSE:=BSD-3-Clause
 
+PKGARCH:=all
+
 include $(INCLUDE_DIR)/package.mk
 
 define Package/blue-merle

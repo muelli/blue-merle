@@ -26,9 +26,6 @@ endef
 define Build/Compile
 endef
 
-define package/blue-merle/download
-endef
-
 define Package/blue-merle/install
 	$(CP) ./files/* $(1)/
 	$(INSTALL_BIN) ./files/etc/init.d/* $(1)/etc/init.d/

@@ -34,6 +34,7 @@ jobs:
           ARCH: ${{ matrix.arch }}
           PACKAGES: blue-merle
           FEED_DIR: ${{ github.workspace }}
+          NO_REFRESH_CHECK: 1
           V: s
 
       - name: Store packages

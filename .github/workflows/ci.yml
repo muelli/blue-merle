@@ -34,6 +34,7 @@ jobs:
           ARCH: ${{ matrix.arch }}
           PACKAGES: blue-merle
           FEED_DIR: ${{ github.workspace }}
+          V: s
 
       - name: Store packages
         uses: actions/upload-artifact@v2

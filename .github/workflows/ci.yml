@@ -35,7 +35,7 @@ jobs:
           PACKAGES: blue-merle
           FEED_DIR: ${{ github.workspace }}
           NO_REFRESH_CHECK: 1
-          V: s
+          V: sc
 
       - name: Store packages
         uses: actions/upload-artifact@v2
